@@ -65,7 +65,7 @@
 
             <button class="btn btn-info btn-block" data-toggle="collapse" data-target="#exam">Start Exam</button>
             <div id="exam" class="collapse">
-            <!-- <HINT> If user is authenticated, show course exam with a list of question -->
+            <!--  If user is authenticated, show course exam with a list of question -->
                 {% if user.is_authenticated %}
                 <div class="container">
                     <form id="questionform" action="{% url 'onlinecourse:submit' course.id %}" method="post">
